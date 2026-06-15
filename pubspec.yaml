@@ -9,11 +9,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  path: ^1.9.1
+  sqflite: ^2.4.3
+  shared_preferences: ^2.2.0
+  analytics: ^2.0.3
+  path_provider: ^2.1.5
+  fl_chart: ^1.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/images/logo.png"

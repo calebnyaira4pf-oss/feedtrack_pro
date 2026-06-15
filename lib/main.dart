@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 import 'screens/splash_screen.dart';
-import 'utils/app_theme.dart';
+import 'theme/app_theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const FeedTrackApp(),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FeedTrackApp extends StatelessWidget {
+
+  const FeedTrackApp({super.key});
 
   @override
   Widget build(BuildContext context) {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+
+      title: "FeedTrack Pro",
+
       theme: AppTheme.lightTheme,
+
       home: const SplashScreen(),
     );
   }
